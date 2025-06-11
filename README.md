@@ -16,7 +16,7 @@ O sistema permite a criação de contas de **clientes** e **vendedores**, garant
 
 * **Linguagem:** Java 17+
 * **Framework:** Spring Boot (REST API)
-* **Banco de Dados:** PostgreSQL (via Docker)
+* **Banco de Dados:** PostgreSQL (via Docker) 
 * **JPA:** Spring Data JPA (Hibernate)
 * **Validações:** Bean Validation (JSR 380)
 * **Documentação:** Swagger/OpenAPI
@@ -27,12 +27,10 @@ O sistema permite a criação de contas de **clientes** e **vendedores**, garant
 ### 🌐 Frontend — Next.js + Tailwind
 
 * **Framework:** Next.js (App Router)
-* **Linguagem:** TypeScript
+* **Linguagem:** JavaScript
 * **Estilização:** Tailwind CSS
-* **HTTP Client:** Axios
 * **Gerenciamento de Estado:** Zustand + Context API
 * **Componentização:** Componentes React reutilizáveis
-* **Variáveis de ambiente:** `.env.local`
 
 > A interface web é acessível, responsiva, intuitiva e pensada para ser inclusiva. O layout é construído com foco em acessibilidade e usabilidade.
 
@@ -69,10 +67,9 @@ recifeirinha/
 
 ## 🛠️ Funcionalidades em Destaque
 
-* 👤 **Autenticação**: Login seguro com perfis distintos: Cliente e Comerciante.
+* 👤 **Autenticação**: Login com perfis distintos: Cliente e Comerciante.
 * 🛒 **Catálogo de Produtos**: Lista de itens por loja, com busca e filtros dinâmicos.
 * 🧾 **Carrinho & Checkout**: Compra simplificada com controle de estoque.
-* 📊 **Dashboard do Comerciante**: Gerenciamento de produtos, pedidos e métricas.
 * 🔒 **Rotas Protegidas**: Acesso controlado por perfil de usuário, tanto no frontend quanto no backend.
 
 ---
@@ -103,9 +100,8 @@ cd backend
 
 ```bash
 cd frontend
-pnpm install
-cp .env.local.example .env.local
-pnpm dev
+npm install --legacy-peer-deps
+npm run dev
 ```
 
 > A interface estará disponível em: [http://localhost:3000](http://localhost:3000)
@@ -115,7 +111,6 @@ pnpm dev
 ## ⚙️ Configuração de Ambiente
 
 * 🔧 **Backend**: `application.properties` contém a URL, usuário e senha do banco PostgreSQL.
-* 🌍 **Frontend**: arquivo `.env.local` com a variável:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8080

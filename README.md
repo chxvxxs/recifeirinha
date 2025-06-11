@@ -120,6 +120,4 @@ NEXT_PUBLIC_API_URL=http://localhost:8080
 
 ## 📁 Documentação da API
 
-A documentação Swagger estará disponível após subir o backend:
-
-🔗 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+A documentação Swagger estará disponível após subir o backend

@@ -22,9 +22,6 @@ export default function Header() {
             <Link href="/" className="text-gray-600 hover:text-[#FF5258] transition-colors text-sm xl:text-base">
               Início
             </Link>
-            <Link href="/meus-produtos" className="text-gray-600 hover:text-[#FF5258] transition-colors text-sm xl:text-base">
-              Meus Produtos
-            </Link>
             <Link href="/sobre" className="text-gray-600 hover:text-[#FF5258] transition-colors text-sm xl:text-base">
               Sobre
             </Link>
